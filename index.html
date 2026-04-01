@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayCo. | Express Yourself Through Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">Jay<span>CO.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cart-icon-container">
+                    <a href="#cart" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal reveal-up">
+            <p class="eyebrow">Minimalist streetwear from the Philippines</p>
+            <h1>Express Yourself Through Style</h1>
+            <p class="hero-copy">Clean silhouettes, graphic drops, and premium everyday tees designed for a sharp, effortless wardrobe.</p>
+            <div class="hero-actions">
+                <a href="#shop" class="btn">Shop Now</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
+            </div>
+            <div class="hero-highlights">
+                <div>
+                    <strong>Premium cotton</strong>
+                    <span>Soft feel with structure</span>
+                </div>
+                <div>
+                    <strong>Limited drops</strong>
+                    <span>Small-batch visual direction</span>
+                </div>
+                <div>
+                    <strong>Easy to style</strong>
+                    <span>Neutral base, artistic edge</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="shop container reveal-section">
+        <h2 class="section-title reveal reveal-up">Our Collection</h2>
+        <p class="section-copy reveal reveal-up">A compact lineup of elevated essentials and expressive graphics that work across casual, layered, and street-ready fits.</p>
+        <div class="product-grid" id="product-grid">
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/blackie.png" alt="Classic Black Tee">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Core Essential</span>
+                    <h3>Classic Black Tee</h3>
+                    <p class="price">PHP 999</p>
+                    <button class="add-to-cart" data-id="1" data-name="Classic Black Tee" data-price="999.00" data-image="images/blackie.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/white.png" alt="Urban White Tee">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Fresh Neutral</span>
+                    <h3>Urban White Tee</h3>
+                    <p class="price">PHP 950</p>
+                    <button class="add-to-cart" data-id="2" data-name="Urban White Tee" data-price="950.00" data-image="images/white.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/grey.png" alt="Minimalist Gray">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Everyday Layer</span>
+                    <h3>Minimalist Gray</h3>
+                    <p class="price">PHP 890</p>
+                    <button class="add-to-cart" data-id="3" data-name="Minimalist Gray" data-price="890.00" data-image="images/grey.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/grap.png" alt="Graphic Concept">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Graphic Drop</span>
+                    <h3>Graphic Concept</h3>
+                    <p class="price">PHP 1199</p>
+                    <button class="add-to-cart" data-id="4" data-name="Graphic Concept" data-price="1199.00" data-image="images/grap.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/art.png" alt="Artistic Nature">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Artist Series</span>
+                    <h3>Artistic Nature</h3>
+                    <p class="price">PHP 1250</p>
+                    <button class="add-to-cart" data-id="5" data-name="Artistic Nature" data-price="1250.00" data-image="images/art.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/mod.png" alt="Modern Abstract">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Studio Pick</span>
+                    <h3>Modern Abstract</h3>
+                    <p class="price">PHP 1499</p>
+                    <button class="add-to-cart" data-id="6" data-name="Modern Abstract" data-price="1499.00" data-image="images/mod.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/vin.png" alt="Vintage Duo">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Retro Mood</span>
+                    <h3>Vintage Duo</h3>
+                    <p class="price">PHP 1299</p>
+                    <button class="add-to-cart" data-id="7" data-name="Vintage Duo" data-price="1299.00" data-image="images/vin.png">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card reveal reveal-up tilt-card">
+                <div class="product-image">
+                    <img src="images/esse.png" alt="Essential White">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">Clean Staple</span>
+                    <h3>Essential White</h3>
+                    <p class="price">PHP 799</p>
+                    <button class="add-to-cart" data-id="8" data-name="Essential White" data-price="799.00" data-image="images/esse.png">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about reveal-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal reveal-left">
+                    <h2 class="section-title">About Us</h2>
+                    <p>At JayCo., we believe clothing is more than fabric. It is a canvas for self-expression. Founded in 2024, our goal is to create premium minimalist pieces with enough character to stand alone and enough restraint to wear every day.</p>
+                    <p>Every piece in our collection is crafted from premium materials and produced through ethical manufacturing processes, ensuring you not only look good but also feel good about what you wear.</p>
+                </div>
+                <div class="about-image reveal reveal-right">
+                    <img src="images/ajgene.png" alt="Our Workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact container reveal-section">
+        <h2 class="section-title reveal reveal-up">Get In Touch</h2>
+        <p class="section-copy reveal reveal-up">Need sizing help, bulk orders, or a quick question about a drop? Send us a message and we will get back to you.</p>
+        <div class="contact-container">
+            <form id="contact-form" class="reveal reveal-up">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">PHP 0.00</span>
+                </div>
+                <button class="btn checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content checkout-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <h3>Shipping Information</h3>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-email">Email Address *</label>
+                            <input type="email" id="checkout-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="PH">Philippines</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="AU">Australia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-method">Shipping Method *</label>
+                            <select id="shipping-method" name="shippingMethod" required>
+                                <option value="">Select Shipping Method</option>
+                                <option value="standard">Standard Shipping (3-5 days) - PHP 150</option>
+                                <option value="express">Express Shipping (1-2 days) - PHP 300</option>
+                                <option value="overnight">Overnight Shipping - PHP 600</option>
+                            </select>
+                        </div>
+                        <h3>Payment Information</h3>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card *</label>
+                            <input type="text" id="card-name" name="cardName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number *</label>
+                            <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date *</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV *</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="billing-same" name="billingSame" checked>
+                            <label for="billing-same">Billing address is the same as shipping address</label>
+                        </div>
+                        <button type="submit" class="btn place-order-btn">Place Order</button>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="checkout-subtotal">PHP 0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="checkout-shipping">PHP 0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total:</span>
+                        <span id="checkout-total">PHP 0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Jay<span>CO.</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JayCo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
